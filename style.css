@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+
+.flex-container{
+    display: flex; /* or inline-flex */
+    flex-direction: column;
+    justify-content: space-between;
+    /* margin: auto; */
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+
+.flex-item{
+    padding: 10px;
+}
+
+
+.chart-container {
+    width: 800;
+    height: 400px;
+    background-color: #fff;
+    border-color: lightgray;
+    border-style: solid;
+    border-width: .2rem;
+}
+
+body {
+    font-family:"Work Sans", sans-serif;
+    /* margin-left: 5%; */
+    /* margin-right: 5%; */
+    /* margin-top: 20px; */
+    /* margin-bottom: 20px; */
+
+    height: 100%;
+    background-color: #eee;
+    background-image:         linear-gradient(top, pink, white, skyblue,); /* W3C */
+    background-image:    -moz-linear-gradient(top, pink, white, skyblue); /* FF3.6+ */
+    background-image: -webkit-linear-gradient(top, pink, white, skyblue); /* Chrome10+,Safari5.1+ */
+    background-attachment: fixed;
+
+}
+
+#header {
+    margin: 25px;
+    font-family: "Space Mono",sans-serif;
+
+}
+
+
+#page-title {
+    font-size: 2.75rem;
+    font-weight: bold;
+    text-shadow: -3px 3px 0px #fff;
+    margin-bottom: 0px;
+}
+
+#byline {
+    font-size:1.3rem;
+    font-weight: 400;
+}
+
+#section-title {
+    font-size: 1.75rem;
+    font-weight: 500;
+    font-family: "Work Sans", sans-serif;
+    margin-bottom: .2rem;
+}
+
+div#map-tooltip {
+    display: none;
+    font-family: Lato;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 125px;
+    height: 125px;
+    background: #eee;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: -1px 1px 4px lightgrey;
+}
+
+div#map-tooltip > div {
+    margin-bottom: 5px;
+}
+
+#resource-list > li{
+    margin: 0 0 20px 0;
+}
+
+hr {
+    width: 50%;
+    border: 2px solid black;
+    box-shadow: -3px 3px 0px #fff;
+}
+
+#footer{
+    margin: 3rem;
+    font-family: "Space Mono",sans-serif;
+    display: flex; 
+    justify-content: center;
+    font-weight: 500;
+
+}
