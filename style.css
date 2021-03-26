@@ -17,8 +17,8 @@
 
 
 .chart-container {
-    width: 800;
-    height: 400px;
+    width: 100%;
+    height: 500px;
     background-color: #fff;
     border-color: lightgray;
     border-style: solid;
