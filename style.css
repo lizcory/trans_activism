@@ -49,7 +49,7 @@ body {
 
 
 #page-title {
-    font-size: 2.75rem;
+    font-size: 3rem;
     font-weight: bold;
     text-shadow: -3px 3px 0px #fff;
     margin-bottom: 0px;
@@ -67,9 +67,14 @@ body {
     margin-bottom: .2rem;
 }
 
-div#map-tooltip {
+.mapboxgl-popup-content {
+    font-family:"Work Sans", sans-serif;
+
+}
+
+/* div#map-tooltip {
     display: none;
-    font-family: Lato;
+    font-family: 'Work Sans', sand-serif;
     position: absolute;
     top: 0px;
     bottom: 0px;
@@ -79,11 +84,32 @@ div#map-tooltip {
     padding: 8px;
     border-radius: 8px;
     box-shadow: -1px 1px 4px lightgrey;
+
+ 
+    
 }
 
 div#map-tooltip > div {
     margin-bottom: 5px;
-}
+} */
+
+/* #map-sidebar {
+  position: absolute;
+  justify-content: center;
+  font-family: sans-serif;
+  margin-top: 5px;
+  min-height: 30px;
+  height: auto;
+  padding: 0px;
+  width: 100%;
+  border: 2px solid black;
+  font-size: 14px;
+  color: #222;
+  background-color: #fff;
+  border-radius: 3px;
+} */
+
+
 
 #resource-list > li{
     margin: 0 0 20px 0;
