@@ -5,8 +5,8 @@
     flex-direction: column;
     justify-content: space-between;
     /* margin: auto; */
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
     margin-top: 10px;
     margin-bottom: 100px;
 }
@@ -37,26 +37,29 @@ body {
     background-image:         linear-gradient(top, pink, white, skyblue,); /* W3C */
     background-image:    -moz-linear-gradient(top, pink, white, skyblue); /* FF3.6+ */
     background-image: -webkit-linear-gradient(top, pink, white, skyblue); /* Chrome10+,Safari5.1+ */
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 
 }
 
 #header {
     margin: 25px;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 10px;
     font-family: "Space Mono",sans-serif;
 
 }
 
 
 #page-title {
-    font-size: 3rem;
+    font-size: 2.6rem;
     font-weight: bold;
     text-shadow: -3px 3px 0px #fff;
     margin-bottom: 0px;
 }
 
 #byline {
-    font-size:1.3rem;
+    font-size:1.2rem;
     font-weight: 400;
 }
 
@@ -129,3 +132,10 @@ hr {
     font-weight: 500;
 
 }
+
+@media screen and (max-width: 768px) {
+    .flex-container, #header {
+       margin: 5%;
+       margin-top: 15px;
+    }
+  }
