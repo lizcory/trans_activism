@@ -73,7 +73,7 @@ body {
 }
 
 #byline {
-    font-size:1.5rem;
+    font-size:1rem;
     font-weight: 400;
     /* font-family: "Work Sans", sans-serif; */
 }
@@ -200,7 +200,7 @@ hr {
 
     }
     #header {
-        margin-top: 15px;
+        /* margin-top: 15px; */
         max-width: 700px;
         min-width: 500px;
         /* margin-left: 10%; */
