@@ -43,6 +43,6 @@
 });
 
 
- map.addControl(L.mapbox.legendControl(legend));
+map.addControl(L.mapbox.legendControl(legend));
 
-  map.legendControl.addLegend(document.getElementById('legend').innerHTML)
+map.legendControl.addLegend(document.getElementById('legend').innerHTML)

@@ -70,10 +70,10 @@
         
 
         <div class = "flex-item">
-            <h2 id = "section-title">Legislation Timeline</h2>
+            <h2 id = "section-title">Legislation Tracker</h2>
             <div class="chart-container" id = "chart">
             
-                <svg></svg>
+                <img src = "static/ACLU_antitrans_billsovertime_0.1-04.svg" alt="Legislation timeline chart">
             </div>
         </div>
 
@@ -95,13 +95,13 @@
 
         <div id = "footer"  class = "flex-item">
             <p> 
-                <b><i>Methods:  </i></b>
-                Tweets were gathered from a full archive search of the Twitter API v2. We queried tweets from 1/02/20 - 3/26/21 that 
+                <b>Methods:</b>
+                Tweets were gathered from a full archive search of the Twitter API v2. We queried tweets from 1/01/20 to 3/26/21 that 
                 included "#TransRightsAreHumanRights" and filtered for those containing location information at the city level.
                 Coordinates for each tweet were calculated by first averaging the bounding box coordinates marking the city
                 and then applying a random jitter to avoid point overlap.
                 
-                Anti-trans bill information was gathered from the ACLU's page on <a href = https://www.aclu.org/legislation-affecting-lgbt-rights-across-country>Legislation Affecting LGBTQ Rights Across the Country.</a>
+                Anti-trans bill information was gathered from the ACLU's page on <a href = https://www.aclu.org/legislation-affecting-lgbt-rights-across-country>Legislation Affecting LGBTQ Rights Across the Country</a> and was last updated on 3/17/21.
             </p>
         </div>  
 

@@ -28,7 +28,7 @@
 
 .chart-container {
     width: 100%;
-    height: 500px;
+    min-width: 500px;
     background-color: #fff;
     border-color: lightgray;
     border-style: solid;
@@ -51,16 +51,6 @@ body {
 }
 
 #header {
-    /* margin: auto;
-    
-    margin-top: 20px;
-    margin-bottom: 20px;
-    min-width: 700px;
-    max-width: 55%; */
-
-    /* margin-left: 20%;
-    margin-right: 20%; */
-
     /* padding: 10px; */
     font-family: "Space Grotesk",sans-serif;
     /* min-width: 700px;
@@ -71,7 +61,7 @@ body {
 
 #page-title {
     font-size: 3rem;
-    font-weight: bolder;
+    font-weight: 700;
     text-shadow: -3px 3px 0px #fff;
     margin-bottom: 0px;
 }
@@ -116,10 +106,7 @@ body {
     background: #eee;
     padding: 8px;
     border-radius: 8px;
-    box-shadow: -1px 1px 4px lightgrey;
-
- 
-    
+    box-shadow: -1px 1px 4px lightgrey;    
 }
 
 div#map-tooltip > div {
