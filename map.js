@@ -12,7 +12,7 @@
   map.addControl(new mapboxgl.NavigationControl());
 
 
-  // popups
+  //popups
   map.on('click', function(e) {
     var features = map.queryRenderedFeatures(e.point, {
       layers: ['transrightsarehumanrights-15000'] // replace this with the name of the layer
@@ -29,19 +29,20 @@
       .setHTML('<h3>' + feature.properties.tweet + '</h3><p>' + feature.properties.created_at + '</p><p>' + feature.properties.place_info_full_name + '</p>')
       .addTo(map);
 
-    
-
-    // var features_state = map.queryRenderedFeatures(e.point, {
-      // layers: ['geo-json-states-bills'] // replace this with the name of the layer
-    // });
-    // 
-    // if (!features_state.length) {
-      // return;
-    // }
-
-    // var popup_state = new mapboxgl.Popup({ offset: [0, -15] })
-      // .setLngLat(feature.geometry.coordinates)
-      // .setHTML('<h3>' + feature.properties.bill_count + '</h3>')
-      // .addTo(map);
+  
+    // map.on('mouseleave', function () {
+    //     if (hoveredStateId !== null) {
+    //     map.setFeatureState(
+    //     { source: 'states', id: hoveredStateId },
+    //     { hover: false }
+    //     );
+    //     }
+    //     hoveredStateId = null;
+  
   
 });
+
+
+ map.addControl(L.mapbox.legendControl(legend));
+
+  map.legendControl.addLegend(document.getElementById('legend').innerHTML)
