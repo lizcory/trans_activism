@@ -31,6 +31,10 @@
     line-height: 1.25rem;
 }
 
+.flex-item > p {
+    margin-bottom: 0;
+}
+
 
 .chart-container {
     width: 100%;
@@ -109,6 +113,9 @@ body {
     font-weight: 500;
     /* font-family: "Work Sans", sans-serif; */
     font-family: "Lato", sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
 
 }
 
@@ -218,7 +225,7 @@ hr {
     font-size: .8rem;
 
     margin: auto;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     margin-bottom: 20px;
     /* min-width: 700px; */
     /* max-width: 55%; */
@@ -226,6 +233,7 @@ hr {
 
 #footer p {
     padding: 10px;
+    margin-top: 0;
 }
 
 
