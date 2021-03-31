@@ -215,7 +215,8 @@ hr {
 }
 
 #footer p {
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin-top: 0;
 }
 
@@ -228,14 +229,6 @@ hr {
        margin-top: 10px;
 
     }
-/*         
-        max-width: 700px;
-        min-width: 500px; */
-/*  */
-
-        /* margin-left: 10%; */
-        /* margin-right: 10%; */
-
     
   }
 
@@ -254,6 +247,4 @@ hr {
     }
 
   }
-
-
 
