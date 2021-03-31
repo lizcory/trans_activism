@@ -23,10 +23,13 @@
     /* min-width: 80%; */
 }
 
-.flex-item:not(#header) {
+/* .flex-item:not(#header, #section-title) {
+    line-height: 1.25rem;
+} */
+
+.flex-item > div{
     line-height: 1.25rem;
 }
-
 
 
 .chart-container {
@@ -37,7 +40,19 @@
     border-style: solid;
     border-width: .2rem;
     margin-top: 1rem;
+    
 }
+
+#chart {
+    height: 500px;
+    overflow-y:auto;
+}
+
+object {
+    font-family: "Lato", sans-serif;
+}
+
+
 
 body {
     /* font-family:"Work Sans", sans-serif; */
@@ -203,8 +218,12 @@ hr {
     }
     #header {
         /* margin-top: 15px; */
+
+/*         
         max-width: 700px;
-        min-width: 500px;
+        min-width: 500px; */
+/*  */
+
         /* margin-left: 10%; */
         /* margin-right: 10%; */
 
@@ -219,11 +238,11 @@ hr {
        margin-top: 10px;
 
     }
-    /* #header {
-        margin-top: 10px;
-        margin-left: 5%;
-        margin-right: 5%;
-    } */
+    #header {
+        max-width: 90vw;
+
+
+    } 
   }
 
 
