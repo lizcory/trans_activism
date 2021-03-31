@@ -48,6 +48,21 @@
     overflow-y:auto;
 }
 
+#chart-header {
+    /* border-radius: 10%; */
+    display: inline-block; 
+    /* height: 10px; */
+    /* margin-right: 5px; */
+    /* width: 10px; */
+    min-width: 682px;
+    max-width: 58%;
+    position: absolute;
+    justify-content: center;
+    /* border-color: lightgray;
+    border-style: solid;
+    border-width: .1rem; */
+}
+
 object {
     font-family: "Lato", sans-serif;
 }
@@ -161,6 +176,7 @@ div#map-tooltip > div {
     width: 10px;
 }
 
+
 #tweet-leg-header {
     margin-top: 7px;
 }
@@ -216,7 +232,9 @@ hr {
        margin-top: 10px;
 
     }
-    #header {
+    /* #chart-header { */
+        /* max-width: 700px; */
+        /* min-width: 500px; */
         /* margin-top: 15px; */
 
 /*         
@@ -243,6 +261,13 @@ hr {
 
 
     } 
+
+    /* #chart-header {
+        max-width: 90vw;
+        min-width: 200px;
+
+
+    }  */
   }
 
 
