@@ -12,37 +12,40 @@
   map.addControl(new mapboxgl.NavigationControl());
 
 
-  //popups
-  map.on('click', function(e) {
-    var features = map.queryRenderedFeatures(e.point, {
-      layers: ['transrightsarehumanrights-15000'] // replace this with the name of the layer
-    });
-  
-    if (!features.length) {
-      return;
-    }
-  
-    var feature = features[0];
-  
-    var popup = new mapboxgl.Popup({ offset: [0, -15] })
-      .setLngLat(feature.geometry.coordinates)
-      .setHTML('<h3>' + feature.properties.tweet + '</h3><p>' + feature.properties.created_at + '</p><p>' + feature.properties.place_info_full_name + '</p>')
-      .addTo(map);
-
-  
-    // map.on('mouseleave', function () {
-    //     if (hoveredStateId !== null) {
-    //     map.setFeatureState(
-    //     { source: 'states', id: hoveredStateId },
-    //     { hover: false }
-    //     );
-    //     }
-    //     hoveredStateId = null;
-  
-  
-});
-
 
 map.addControl(L.mapbox.legendControl(legend));
 
 map.legendControl.addLegend(document.getElementById('legend').innerHTML)
+
+
+
+
+//popups
+  // map.on('click', function(e) {
+  //   var features = map.queryRenderedFeatures(e.point, {
+  //     layers: ['transrightsarehumanrights-15000'] // replace this with the name of the layer
+  //   });
+  
+  //   if (!features.length) {
+  //     return;
+  //   }
+  
+  //   var feature = features[0];
+  
+  //   var popup = new mapboxgl.Popup({ offset: [0, -15] })
+  //     .setLngLat(feature.geometry.coordinates)
+  //     .setHTML('<h3>' + feature.properties.tweet + '</h3><p>' + feature.properties.created_at + '</p><p>' + feature.properties.place_info_full_name + '</p>')
+  //     .addTo(map);
+
+  
+  //   // map.on('mouseleave', function () {
+  //   //     if (hoveredStateId !== null) {
+  //   //     map.setFeatureState(
+  //   //     { source: 'states', id: hoveredStateId },
+  //   //     { hover: false }
+  //   //     );
+  //   //     }
+  //   //     hoveredStateId = null;
+  
+  
+  // });
