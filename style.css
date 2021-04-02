@@ -220,6 +220,34 @@ hr {
     margin-top: 0;
 }
 
+a {
+    outline: none;
+    text-decoration: none;
+  }
+  
+  a:link {
+    color: blue;
+  }
+  
+  a:visited {
+    /* color: rgb(69, 39, 160); */
+  }
+  
+  a:focus {
+    border-bottom: 2px solid;
+    /* background: #BAE498; */
+  }
+  
+  a:hover {
+    border-bottom: 2px solid;
+    background: rgba(255,182,193, 0.4);
+    /* font-weight: 525; */
+  }
+  
+  a:active {
+    color: rgb(173, 20, 87);
+    background: rgba(255,182,193, 0.8);  }
+
 
 @media screen and (max-width: 1010px) {
     .flex-container {

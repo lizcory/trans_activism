@@ -18,6 +18,15 @@ map.addControl(L.mapbox.legendControl(legend));
 map.legendControl.addLegend(document.getElementById('legend').innerHTML)
 
 
+// cluster GeoJSON points
+var index = supercluster({radius: 40, maxZoom: 16}).load(geojson.features);
+// get GeoJSON clusters given a bounding box and zoom
+var clusters = index.getClusters([-180, -85, 180, 85], 2);
+// get a JSON vector tile in the same format as GeoJSON-VT
+var tile = index.getTile(7, 523, 125);
+
+
+
 
 
 //popups
@@ -34,10 +43,10 @@ map.legendControl.addLegend(document.getElementById('legend').innerHTML)
   
   //   var popup = new mapboxgl.Popup({ offset: [0, -15] })
   //     .setLngLat(feature.geometry.coordinates)
-  //     .setHTML('<h3>' + feature.properties.tweet + '</h3><p>' + feature.properties.created_at + '</p><p>' + feature.properties.place_info_full_name + '</p>')
+  //     .setHTML('<h3>' + feature.properties.X + '</h3><p>' + feature.properties.Y + '</p><p>' + feature.properties.Z + '</p>')
   //     .addTo(map);
 
-  
+  //   //// add hover
   //   // map.on('mouseleave', function () {
   //   //     if (hoveredStateId !== null) {
   //   //     map.setFeatureState(
