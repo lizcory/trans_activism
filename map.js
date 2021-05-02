@@ -20,8 +20,7 @@
   map.on('click', function(e) {
     var features = map.queryRenderedFeatures(e.point, {
       layers: ['transrightsarehumanrights-15000'] // replace this with the name of the layer
-    });
-
+    })
     if (!features.length) {
       return;
     }
@@ -57,27 +56,64 @@ map.on('mouseleave', 'transrightsarehumanrights-15000', function () {
   });
 
 
-// map.on('click', function(e) {
-//   var features = map.queryRenderedFeatures(e, {
-//     layers: ['geo-json-states-bills'] // replace this with the name of the layer
-//   });
 
-//   if (!features.length) {
-//     return;
-//   }
+//   map.on('hover', 'geo-json-states-bills', function (e) {
+//     new mapboxgl.Popup()
+//     .setLngLat(e.lngLat)
 
-//   let feature = features[0];
-
-//   var popup = new mapboxgl.Popup({ offset: [0, -15] })
-//     .setLngLat(feature.geometry.coordinates)
 //     .setHTML(
-//     // '<h3>' + 
-//     // feature.properties.X + 
-//     // '</h3><p>' + 
-//     '<p>' + 
-//     feature.properties.bills + 
-//     '</p>')
-//     .addTo(map)
+//       '<h3>' +
+//       e.features[0].properties.NAME + 
+//       '</h3>' +
+//       '<p>' +
+//       'Bills: ' + 
+//       e.features[0].properties.bill_count + 
+//       '</p>'
+//       )
 
+//     // .setHTML(e.features[0].properties.bill_count)
+//     .addTo(map);
+//     });
+
+
+//     // Change the cursor to a pointer when the mouse is over the states layer.
+// map.on('mouseenter', 'geo-json-states-bills', function () {
+//   map.getCanvas().style.cursor = 'pointer';
+//   });
+   
+// // Change it back to a pointer when it leaves.
+// map.on('mouseleave', 'tgeo-json-states-bills', function () {
+//   map.getCanvas().style.cursor = '';
 //   });
 
+
+
+// // When the user moves their mouse over the state-fill layer, we'll update the
+// // feature state for the feature under the mouse.
+// map.on('mousemove', 'geo-json-states-bills', function (e) {
+//   if (e.features.length > 0) {
+//   if (hoveredStateId !== null) {
+//   map.setFeatureState(
+//   { source: 'bill_count', id: hoveredStateId },
+//   { hover: false }
+//   );
+//   }
+//   hoveredStateId = e.features[0].id;
+//   map.setFeatureState(
+//   { source: 'bill_count', id: hoveredStateId },
+//   { hover: true }
+//   );
+//   }
+//   });
+   
+//   // When the mouse leaves the state-fill layer, update the feature state of the
+//   // previously hovered feature.
+//   map.on('mouseleave', 'geo-json-states-bills', function () {
+//   if (hoveredStateId !== null) {
+//   map.setFeatureState(
+//   { source: 'bill_count', id: hoveredStateId },
+//   { hover: false }
+//   );
+//   }
+//   hoveredStateId = null;
+//   });
