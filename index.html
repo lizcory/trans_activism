@@ -22,14 +22,13 @@
 
     <div class = "flex-container">  
 
-    <div class = flex-item id = "header">
-        <h1 id = "page-title">Trans Rights are Human Rights</h1>
-        <h3 id = "byline">Liz Cory & Rachel Peterson</h3>
-    </div>  
-    
-    
+        <div class = flex-item id = "header">
+            <h1 id = "page-title">Trans Rights are Human&nbsp;Rights</h1>
+            <h3 id = "byline">Liz Cory & Rachel Peterson</h3>
+            <h3 id = "date">March 26, 2021</h3>
+        </div>  
 
-        <div class = "flex-item">
+        <div class = "flex-item" id = "flex-2">
             <h2 id = "section-title">Anti-Transgender Legislation on the Rise</h2>
             <p>Only three months into 2021, US state legislators have introduced <a href = "https://www.advocate.com/transgender/2021/3/12/record-number-anti-trans-bills-introduced-states-year" >
                 an historic</a>
@@ -48,10 +47,11 @@
             </p>
         </div>
     
-        <div class = "flex-item">
+        <div class = "flex-item" id = "flex-3">
             <h2 id = "section-title">Resilience Map</h2>
-            <p>This map shows the number of anti-trangender bills introduced by each state in 2020 and 2021 along 
-                with tweets from the same time period including “#TransRightsAreHumanRights.”</p>
+            <p>This map shows the number of anti-transgender bills introduced by each state in the 2020 and 2021
+                legislative sessions along 
+                with tweets from the same period including “#TransRightsAreHumanRights.”</p>
             <div class="chart-container" id = "map">
                 
 
@@ -59,14 +59,14 @@
 
                 <div id="legend" class="legend">
                         <h4>Bills</h4>
-                        <div><span style="background-color: #dadaeb"></span>1</div>
-                        <div><span style="background-color: #bcbddc"></span>3</div>
-                        <div><span style="background-color: #9d99c7"></span>5</div>
-                        <div><span style="background-color: #766cb2"></span>7</div>
-                        <div><span style="background-color: #552790"></span>9</div>
+                        <div><span style="background-color: #f8b154"></span>1</div>
+                        <div><span style="background-color: #fa904d"></span>3</div>
+                        <div><span style="background-color: #ee734a"></span>5</div>
+                        <div><span style="background-color: #de5748"></span>7</div>
+                        <div><span style="background-color: #cb3c43"></span>9</div>
                         
                         <h4 id=tweet-leg-header>Tweets</h4>
-                        <div><span style="background-color: #f0d342", id = "tweet-leg"></span>1</div>
+                        <div><span style="background-color: #34C3BC", id = "tweet-leg"></span>1</div>
                 </div>
 
             </div>
@@ -75,7 +75,7 @@
         </div>
         
 
-        <div class = "flex-item">
+        <div class = "flex-item" id = "flex-4">
             <h2 id = "section-title">Legislation Tracker</h2>        
 
             <p> Anti-transgender legislation is not just increasing but changing in type. While in 2018 and 2019 bills 
@@ -84,26 +84,37 @@
             </p>
 
             
+            <div id = "chart-header">
+
+                <!-- <object type="image/svg+xml" data="ACLU_antitrans_billsovertime_1.4_header-05-outlines.svg"> -->
+                    <!-- fallback -->
+                    <img src = "static/ACLU_antitrans_billsovertime_1.4_header-05-outlines.svg" alt="Legislation timeline header">
+                <!-- </object> -->
+
+            </div>
+
             <div class="chart-container" id = "chart">
                 
-                <object type="image/svg+xml" data="ACLU_antitrans_billsovertime_1.4_withheader-04-nano.svg">
+                <!-- <object type="image/svg+xml" data="ACLU_antitrans_billsovertime_1.4-04-outlines.svg"> -->
                     <!-- fallback -->
-                    <img src = "static/ACLU_antitrans_billsovertime_1.4_withheader-04-nano.svg" alt="Legislation timeline chart">
-                </object>
+                    <img src = "static/ACLU_antitrans_billsovertime_1.4-04-TEST.svg" alt="Legislation timeline chart">
+                <!-- </object> -->
             
             </div>
 
+
              <div id = "key">
-                <object id = "chart-header" type="image/svg+xml" data="static/ACLU_antitrans_billsovertime_1.5_key-06.svg">
+
+                <!-- <object type="image/svg+xml" data="static/ACLU_antitrans_billsovertime_1.5_key-06-outlines.svg"> -->
                     <!-- fallback -->
-                    <img src = "static/ACLU_antitrans_billsovertime_1.5_key-06.svg" alt="Legislation key">
-                </object>
+                    <img src = "static/ACLU_antitrans_billsovertime_1.5_key-06-TEST.svg" alt="Legislation key">
+                <!-- </object> -->
             </div>
             
 
         </div>
 
-        <div class = "flex-item">
+        <div class = "flex-item" id = flex-5>
             <h2 id = "section-title">Stay Informed</h2>
             <p> Follow these trans activists and journalists on Twitter:
             <ul id = "resource-list">
@@ -120,9 +131,12 @@
 
     
 
-    <hr>
+    
 
         <div id = "footer"  class = "flex-item">
+
+            <hr>
+
             <p> 
                 <b>Methods:</b>
                 Tweets were gathered from a full archive search of the Twitter API v2. We queried tweets from 1/01/20 to 3/26/21 that 
