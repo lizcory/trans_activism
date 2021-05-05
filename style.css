@@ -1,7 +1,6 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-
 .flex-container{
     display: flex; /* or inline-flex */
     flex-direction: column;
@@ -25,7 +24,7 @@
 }
 
 .flex-item > div{
-    line-height: 1.25rem;
+    line-height: 1.3rem;
 }
 
 .flex-item > p {
@@ -37,11 +36,10 @@
     /* width: 100%; */
     min-height: 500px;
     background-color: #F0F0F0;
-    border-color: #424242;
-    border-style: solid;
-    border-width: 3px;
+    /* border-color: #424242; */
+    /* border-style: solid; */
+    /* border-width: 3px; */
     margin-top: 1rem;
-    /* position: absolute; */
     
 }
 
@@ -49,14 +47,14 @@
     /* height: auto; */
     /* min-height: 20px; */
     /* padding: 0; */
-    /* width: 100%; */
-    border-color: #424242;
-    border-style: solid;
-    border-width: 3px;
-    border-bottom: none;
+    width: 100%;
+    /* border-color: #424242; */
+    /* border-style: solid; */
+    /* border-width: 3px; */
+    /* border-bottom: none; */
     margin-bottom: 0;
     margin-top: 1rem;
-    /* background: orange; */
+    background: #2E2E2E;
 }
 
 
@@ -69,12 +67,11 @@
 
 #key {
     /* width: 100%; */
-    border-color: #424242;
+    /* border-color: #424242;
     border-style: solid;
-    border-width: 3px;
+    border-width: 3px; */
     margin-top: 1rem;
     display: block;
-    /* margin-top: 10px; */
 }
 
 object {
@@ -94,7 +91,7 @@ body {
     height: 100%;
     background-color: #121212;
     color: #eee;
-    line-height: 1.4rem;
+    line-height: 1.3rem;
     /* W3C */
     /* background-image:         linear-gradient(top, pink, white, skyblue); */
     /* FF3.6+ */     
@@ -108,7 +105,7 @@ body {
 
 #header {
     /* padding: 10px; */
-    font-family: "Space Grotesk",sans-serif;
+    font-family: "Lato",sans-serif;
     /* background-color: skyblue; */
     position: relative;
     line-height:normal;
@@ -120,19 +117,24 @@ body {
 
 
 #page-title {
-    font-size: 4rem;
+    font-size: 4.5rem;
     font-weight: 700;
-    /* text-shadow: -3px 3px 0px #fff; */
+    font-family: 'Space Grotesk', sans-serif;
+    /* text-shadow: -3px 3px 0px #2E2E2E; */
+    /* filter: drop-shadow(-2px 2px rgb(106, 198, 235)); */
+    /* color: #34C3BC; */
+    color: #eee;
+
     margin-bottom: 0px;
 
-    background-image:  linear-gradient(rgb(248, 144, 162), rgb(106, 198, 235) 65%);
-    background-image: -webkit-linear-gradient(rgb(248, 144, 162), rgb(106, 198, 235));
-    background-image: -moz-linear-gradient(rgb(248, 144, 162), rgb(106, 198, 235));
+    /* background:  linear-gradient( rgb(248, 144, 162) 30%, #eee 50%, rgb(106, 198, 235) 80% );
+    background: -webkit-linear-gradient( rgb(248, 144, 162) 30%, #eee 50%,  rgb(106, 198, 235) 80% );
+    background: -moz-linear-gradient( rgb(248, 144, 162) 30%, #eee 50%, rgb(106, 198, 235) 80% );
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-/*  */
+    -moz-text-fill-color: transparent;  */
+
 } 
 
 #byline, #date {
@@ -145,36 +147,21 @@ body {
 
 }
 
-#date {
-    /* color: #fff; */
-}
-
 #section-title {
     font-size: 1.75rem;
     font-weight: 700;
     /* font-family: "Work Sans", sans-serif; */
     font-family:"Lato", sans-serif;
-
     margin-bottom: .2rem;
+    line-height: 2rem;
 }
 
-#flex-2{
-    /* background-color: lightpink; */
-}
-#flex-3{
-    /* background-color: white; */
-}
-#flex-4{
-    /* background-color: lightpink; */
-}
-#flex-5{
-    /* background-color: skyblue; */
-}
 
 .mapboxgl-popup {
     /* font-family:"Work Sans", sans-serif; */
     font-family:"Lato", sans-serif;
     color: black;
+    /* background: #eee; */
     /* max-width: 400px; */
 }
 
@@ -183,27 +170,9 @@ body {
     /* font-family:"Work Sans", sans-serif; */
     font-family:"Lato", sans-serif;
     margin: 0;
+    /* color: #eee; */
 
 }
-
-/* div#map-tooltip {
-    display: none;
-    font-family: 'Work Sans', sand-serif;
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    width: 125px;
-    height: 125px;
-    background: #eee;
-    padding: 8px;
-    border-radius: 8px;
-    box-shadow: -1px 1px 4px lightgrey;    
-}
-
-div#map-tooltip > div {
-    margin-bottom: 5px;
-} */
-
 
 
 .legend {
@@ -290,30 +259,41 @@ a {
   }
   
   a:link {
-    color: #6AC6EB;
+    /* color: #6AC6EB; */
+    color: #eee;
+    border-bottom: 1px solid #6AC6EB;
+    /* color: #F890A2; */
+    /* color: #34C3BC; */
     /* color: blue; */
     /* color: rgb(1, 157, 219); */
   }
   
   a:visited {
     /* color: rgb(69, 39, 160); */
-    color: #F890A2;
+    /* color: #F890A2; */
+    /* color: #34C3BC */
+    color: #eee;
+    border-bottom: 1px solid #6AC6EB;
+
+
   }
   
   a:focus {
-    border-bottom: 2px solid;
+    color: #F890A2;
+    /* border-bottom: 2px solid; */
     /* background: #BAE498; */
   }
   
   a:hover {
-    border-bottom: 2px solid;
-    background: rgba(106, 198, 235, 0.15);
+    color: #6AC6EB;
+    border-bottom: 0px solid;
+    /* background: rgba(106, 198, 235, 0.15); */
     /* font-weight: 525; */
   }
   
   a:active {
     color: #F890A2;
-    background: rgb(248, 144, 162, 0.15);  
+    /* background: rgb(248, 144, 162, 0.15);   */
 }
 
 
@@ -331,7 +311,7 @@ a {
 
 @media screen and (max-width: 768px) {
     .flex-container{
-       margin: 5%;
+       margin: 3%;
        min-width: 200px;
        margin-top: 10px;
        /* width: 90% */
@@ -341,9 +321,13 @@ a {
 
     }
     #header {
-        max-width: 90vw;
+        /* max-width: 90vw; */
 
 
+    }
+
+    #page-title {
+        font-size: 4rem;
     }
 
 }
@@ -355,7 +339,7 @@ a {
 
 @media screen and (max-width: 576px) {
     #page-title {
-    font-size: 3.2rem;
+    font-size: 2.5rem;
     }
 
 }
